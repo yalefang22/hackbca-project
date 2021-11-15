@@ -18,7 +18,7 @@
         Some custom JS for interactive buttons:     <script src="/js/event_utils.js"></script>
         Some onclick attributes on certain clickable HTML elements, which trigger a snippet of JS
 
-    After this page, check out events/1.html (a sample event page) and eventform.html (a sample add/modify event page)
+    After this page, check out events/1.html (a sample event page) and projectform.html (a sample add/modify event page)
  -->
 
 <!DOCTYPE html>
@@ -93,7 +93,7 @@
                     <a href="?sort=starred"><i class="material-icons">sort</i></a>
                 </th>
 
-                <th>Event</th>
+                <th>Project</th>
                 <th>Location <a href="?sort=location">
                     <i class="material-icons">sort</i></a>
                     <i class="material-icons">filter_list</i>
@@ -133,7 +133,7 @@
                 <!-- ADMIN ONLY BUTTONS -->
                 <td nowrap>
 
-                    <a class="btn-floating btn-small waves-effect waves-light green lighten-1" href="/eventform.html"><i
+                    <a class="btn-floating btn-small waves-effect waves-light green lighten-1" href="/projectform.html"><i
                             class="material-icons">edit</i></a>
                     <a class="btn-floating waves-effect waves-light red"
                        onclick='confirmDelete("Opening Ceremony","{{ event_id}}", ".")'><i
@@ -162,7 +162,7 @@
                 <!-- ADMIN ONLY BUTTONS -->
                 <td nowrap>
 
-                    <a class="btn-floating btn-small waves-effect waves-light green lighten-1" href="./eventform.html"><i
+                    <a class="btn-floating btn-small waves-effect waves-light green lighten-1" href="./projectform.html"><i
                             class="material-icons">edit</i></a>
                     <a class="btn-floating waves-effect waves-light red"
                        onclick='confirmDelete("Opening Ceremony","{{ event_id}}")'><i class="material-icons">delete</i></a>
@@ -174,7 +174,7 @@
         </table>
     </div>
 
-    <a href="/eventform.html" class="btn-floating btn-large orange fixed-action-btn">
+    <a href="/projectform.html" class="btn-floating btn-large orange fixed-action-btn">
         <i class="large material-icons">create</i>
     </a>
 </main>
