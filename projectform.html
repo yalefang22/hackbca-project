@@ -62,9 +62,9 @@
 
 <main>
 
-    <form id="create_update_event" method="post" action="/event">
+    <form id="create_update_project" method="post" action="/project">
         <!-- action and method depend on C vs U-->
-        <input type="hidden" name="event_id" id="event_id" value="0">
+        <input type="hidden" name="project_id" id="project_id" value="0">
         <!-- server sets event_id value-->
 
         <div class="container">
@@ -122,8 +122,8 @@
 
                     <div class="row">
                         <div class="input-field col s12">
-                            <textarea id="event_description" class="materialize-textarea" data-length="500"></textarea>
-                            <label for="event_description">Description</label>
+                            <textarea id="project_description" class="materialize-textarea" data-length="500"></textarea>
+                            <label for="project_description">Description</label>
                         </div>
                     </div>
 

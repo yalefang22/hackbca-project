@@ -12,6 +12,16 @@ function confirmDelete(event_name, event_id, redirect_to){
     }
 }
 
+
+function confirmDeleteProject(project_name, project_id, redirect_to){
+    if(confirm(`Are you sure you want to delete the project ${project_name} (id ${project_id})? This is PERMANENT and cannot be undone.`)) {
+        //TODO: make delete request
+        alert(`Successfully deleted the event ${project_name} (id ${project_id}).`);
+        //What to do next is not widely agreed upon: refresh/redirect to (current) events page?
+        window.location.href = redirect_to || window.location.href;
+    }
+}
+
 function toggleInterest(interestButton, event_id){
     let interestButtonIcon = interestButton.children[0];
     switch(interestButtonIcon.textContent) {
